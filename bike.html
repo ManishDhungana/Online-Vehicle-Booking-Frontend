@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="dashboard">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bikes</title>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="./css/button.css">
+    
+  
+
+
+ <link rel="stylesheet" href="./css/adminpanel.css">
+</head>
+
+<body>
+
+  <header role="banner">
+  <h1>Admin Panel</h1>
+  <ul class="utilities">
+    <li class="users"><a href="adminprofile.html">My Account</a></li>
+  <li class="logout warn"><a><button id="logout" class="logout warn btn btn-link">Logout</button></a></li>
+  </ul>
+</header>
+
+<nav role="navigation">
+  <ul class="main">
+    <li class="dashboard"><a href="#">Dashboard</a></li>
+    <li class="car"><a href="car.html">Car</a></li>
+    <li class="truck"><a href="truck.html">Truck</a></li>
+   
+    <li class="users"><a href="bikeapproval.html">Bike Approval</a></li>
+   
+   
+    <li class="users"><a href="#">Bike Ratings</a></li>
+   
+    <li class="users"><a href="contactmessages.html">Messages</a></li>
+   
+  </ul>
+</nav>
+
+<main role="main">
+  <section class="panel important">
+    <h2>Bikes</h2>
+    
+  </section>
+  <section class="panel">
+    <h2>Write a post</h2>
+  <form>
+      <div class="twothirds">
+
+          <form enctype="multipart/form-data">
+            <label for="image">
+              Image:</label>
+            <input type="file" name="bikeimg" id ="bikeimg" required="true" >
+
+        <label for="name">Name:</label>
+        <input type="text" name="bname" id="bname" placeholder="Insert name" />
+        <label for="type">Type:</label>
+        <input type="text" name="btype" id="btype" placeholder="Insert Type" />
+        <label for="description">Condition:</label>
+        <input type="text" name="bdesc" id="bdesc" placeholder="Condition" />
+        <label for="milage">Milage:</label>
+        <input type="text" name="bmil" id="bmil" placeholder="Insert Milage" />
+      <label for="rent">Rental Price:</label>
+        <input type="text" name="brent" id="brent" placeholder="Insert Rental Price" />
+       
+       
+	  <button  id="Submit" class="btn btn-success mt-2">Upload</button>
+	  </form>
+	  </div>
+    
+  </section>
+  
+   <section class="panel">
+    <h2>Bike's Information</h2>
+    <div class="table-responsive">
+    <table>
+      <tr>
+          <th>Image</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Desc</th>
+        <th>Milage</th>
+        <th>Rent</th>
+		
+        <th>Delete</th>
+        <th>Update</th>
+       
+      </tr>
+      <tbody id="biketable">
+    </tbody>
+    </table>
+  </div>
+  </section>
+</main>
+  <footer role="contentinfo">Section = Bike</footer>
+    <script  src="./script.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script  src="./controllers/bike.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration form</title>
+
+
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/signup.css">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <a href="logo1.jpg" class="navbar-brand">
+        <img src="logo1.jpg" alt="logo">
+      </a>
+      <ul class="main-nav" id="js-menu">
+        <li class="nav-item">
+          <a href="homepage.html" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="aboutus.html" class="nav-links">About Us</a>
+          </li>
+        <li class="nav-item">
+          <a href="help.html" class="nav-links">Help</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="login.html" class="nav-links">Login</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+
+    <form class="form">
+      <h1>Sign Up</h1>
+      <div class="form-group">
+        <input type="text" placeholder=" " id="userfname" required>
+        <label for="userfname">Firstname</label>
+        <div class="error">
+          <i class="fas fa-exclamation-circle"></i>
+          Error encountered!
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder=" " id="userlname" required>
+        <label for="userlname">Lastname</label>
+        <div class="error">
+          <i class="fas fa-exclamation-circle"></i>
+          Error encountered!
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <input type="email" placeholder=" " id="username" required>
+        <label for="email">Email</label>
+        <div class="error">
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder=" " id="password" required />
+        <label for="password">Password</label>
+        <div class="error">
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="password" placeholder=" " id="cpassword" required />
+        <label for="password">ConfrimPassword</label>
+        <div class="error">
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <input type="text" id="Usertype" name="Usertype" value="User" placeholder="User" readonly>
+        <label for="Usertype"></label>
+
+      </div>
+      <div class="container text-center">
+        <button id="UserRegistration" class="btn btn-info">Register</button>
+      </div>
+      <div class="form-bottom">
+        <a href="login.html">Already have account? Login here</a>
+      </div>
+    </form>
+    <div class="container-fluid footers mt-4">
+      <div class="container">
+        <footer class="page-footer">
+
+          <div class="footer-copyright text-center py-2">
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+
+          <div class="footer-copyright text-center py-2">© 2019 Copyright:
+            <a href=""> CAMDEN TRAVELS.com</a>
+          </div>
+
+
+        </footer>
+      </div>
+    </div>
+    <script src="./nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./controllers/register.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="./controllers/register.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+  </body>
+
+  </html>
+
+
+
+</body>
+
+</html>

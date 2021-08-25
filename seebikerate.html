@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="dashboard">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./css/dashboardbike.css">
+  <link rel="stylesheet" href="./css/button.css">
+
+
+ 
+
+  
+  <link rel="stylesheet" href="./css/adminpanel.css">
+</head>
+
+<body>
+
+  <header role="banner">
+    <h1>Admin Panel</h1>
+    <ul class="utilities">
+      <li class="users"><a href="adminprofile.html">My Account</a></li>
+      <!-- <li class="logout warn" id="logout" ><a href="">Log Out</a></li> -->
+      <li class="logout warn"><a><button id="logout" class="logout warn btn btn-link">Logout</button></a></li>
+    </ul>
+  </header>
+
+  <nav role="navigation">
+    <ul class="main">
+      <li class="dashboard"><a href="#">Dashboard</a></li>
+      <li class="car"><a href="car.html">Car</a></li>
+      <li class="bike"><a href="bike.html">Bike</a></li>
+      <li class="truck"><a href="truck.html">Truck</a></li>
+      <li class="users"><a href="carapproval.html">Car Approval</a></li>
+    <!--   <li class="users"><a href="bikeapproval.html">Bike Approval</a></li> -->
+      <li class="users"><a href="truckapproval.html">Truck Approval</a></li>
+      <li class="users"><a href="#">Truck Ratings</a></li>
+      <li class="users"><a href="#">Bike Ratings</a></li>
+      <li class="users"><a href="#">Car Ratings</a></li>
+      <li class="users"><a href="#">Messages</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+    <section class="panel important">
+      <h2>Conformation Of Bikes</h2>
+      <div class="table-responsive">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <table class="table table-image">
+              <thead>
+                <tr>
+
+                  <th scope="col">Username</th>
+
+                  <th scope="col">Bikename</th>
+
+
+                  <th scope="col">Ratings</th>
+           
+
+                  
+
+                </tr>
+              </thead>
+              <tbody id="bikeratetable">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+  <footer role="contentinfo">Bike Booking</footer>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script  src="./controllers/seebikerates.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</body>
+
+</html>

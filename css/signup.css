@@ -1,0 +1,137 @@
+
+body, html {
+  height: 100%;
+  
+ 
+ background-image: linear-gradient(to right top, #0b0c0d, #151717, #1c1f1f, #252826, #2f302d);
+
+}
+.form {
+  margin: auto;
+  padding: 5px;
+  max-width: 420px;
+  position: relative;
+  top: 48%;
+  transform: translateY(-50%);
+ color: black;
+  border-radius: 10px;
+ font-family: "Josefin Sans";
+  letter-spacing: 0.5px;
+}
+
+.form h1{
+  text-align: center;
+  margin: 20px 0 35px 0;
+  color: black;
+
+}
+
+.form-group {
+  margin: 2px 2px;
+  max-width: 100%;
+  min-height: 68px;
+  margin: 10px 0 0 0;
+  padding: 0 35px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 38px;
+  padding: 0 12px;
+  font-size: 17px;
+  letter-spacing: 0.25px;
+  border-radius: 20px;
+  border: 1.5px solid rgb(31,187,176);
+  background-color: white;
+  
+  autocomplete: off;
+  
+}
+
+.form-group input:active,
+.form-group input:focus {
+  background-color: skyblue;
+  outline: none;
+  autocomplete: off;
+  box-shadow: 0 0 2px 0 rgb(248, 255, 174);
+  border: 1.5px solid rgb(248, 255, 174);
+  color:green;
+}
+
+.form-group input::selection {
+  background-color: green;
+}
+
+.form-group label{
+  pointer-events: none;
+  position: absolute;
+  margin: 0;
+  padding: 0 2px;
+  top: 9px;
+  left: 47px;
+  font-size: 16px;
+  color: red;
+  transition: all 0.12s ease;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label{
+  transform: translateY(-27px);
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.error{
+  color: rgb(255, 102, 102);
+  margin: 3px 0px 0px 12px;
+  font-size: 12.5px;
+  display: none;
+  letter-spacing: 0px;
+}
+
+.form input[type="submit"]{
+  display: block;
+  margin: 20px auto 10px;
+  width: 110px;
+  height: 45px;
+  border-radius: 25px;
+  font-size: 17px;
+  border: none;
+  text-transform: capitalize;
+  background-color: rgba(31,187,176, 0.8);
+  color: white;
+  cursor: auto;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover,
+.form input[type="submit"]:focus{
+  background-color: skyblue;
+  box-shadow: 0 0 2px 0px #2991CF;
+}
+
+.form-bottom {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+}
+
+.form-bottom a{
+  text-decoration: none;
+  color: black;
+}
+
+.form-bottom a:hover,
+.form-bottom a:focus{
+  color: green;
+  outline: none;
+}
+
+

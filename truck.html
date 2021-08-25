@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="dashboard">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+   <link rel="stylesheet" href="./css/button.css">
+  
+
+    
+	<link rel="stylesheet" href="./css/adminpanel.css">
+</head>
+<body>
+  <header role="banner">
+  <h1>Admin Panel</h1>
+  <ul class="utilities">
+    <li class="users"><a href="adminprofile.html">My Account</a></li>
+	<li class="logout warn"><a><button id="logout" class="logout warn btn btn-link">Logout</button></a></li>
+   
+  </ul>
+</header>
+<nav role="navigation">
+  <ul class="main">
+    <li class="dashboard"><a href="#">Dashboard</a></li>
+    <li class="car"><a href="car.html">Car</a></li>
+    <li class="bike"><a href="bike.html">Bike</a></li>
+    
+
+    <li class="users"><a href="truckapproval.html">Truck Approval</a></li>
+    <li class="users"><a href="#">Truck Ratings</a></li>
+   
+    <li class="users"><a href="contactmessages.html">Messages</a></li>
+  </ul>
+</nav>
+
+<main role="main">
+  <section class="panel important">
+    <h2>Truck</h2>
+    
+  </section>
+  <section class="panel">
+    <h2>Write a post</h2>
+  <form>
+      <div class="twothirds">
+          <form enctype="multipart/form-data">
+            <label for="image">
+              Image:</label>
+            <input type="file" name="truckimg" id ="truckimg" required="true">
+        <label for="name">Name:</label>
+        <input type="text" name="tname" id="tname" placeholder="Insert name" />
+        <label for="type">Type:</label>
+        <input type="text" name="ttype" id="ttype" placeholder="Insert Type" />
+        <label for="description">Condition:</label>
+        <input type="text" name="tdesc" id="tdesc" placeholder="Condition" />
+        <label for="milage">Milage:</label>
+        <input type="text" name="tmil" id="tmil" placeholder="Insert Milage" />
+      <label for="rent">Rental Price:</label>
+        <input type="text" name="trent" id="trent" placeholder="Insert Rental Price" />
+   <button  id="Submit" class="btn btn-success mt-2">Upload</button>
+   </form>
+	  </div>
+    
+  </section>
+  
+   <section class="panel ">
+    <h2>Truck's Information</h2>
+    <div class="table-responsive">
+    <table>
+      <tr>
+          <th>Image</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+		<th>Milage</th>
+        <th>Rent</th>
+        <th>Delete</th>
+        <th>Update</th>
+      </tr>
+          <tbody id="trucktable">
+    </tbody>
+    </table>
+   </div>
+  </section>
+  
+</main>
+
+  <footer role="contentinfo">Truck's Booking</footer>
+    <script  src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="./controllers/truck.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	
+  
+</body>
+</html>
